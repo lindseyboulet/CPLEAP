@@ -1,0 +1,125 @@
+---
+title: "Isocapnic & Hypercapnic Data Tables"
+author: "Boulet LM"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![Figure 1. Hypercapnic and IsoCapnic Protocol.](./pictures/hyperIsoProtocol.png)
+----
+
+
+# 
+```{r echo = FALSE}
+emphasize.strong.rows(1)
+panderOptions('missing', '')
+pander(table1, 
+             caption = "Table 1. Isocapnic (Iso) and hypercapnic (Hyper) baseline
+                    cardiovascular and respiratory variables. Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design. ",
+             col.names = rep(" ",5), justify = c("left", rep("center", 4)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
+
+
+
+#
+```{r echo = FALSE}
+emphasize.strong.rows(1:2)
+pander(table2, 
+             caption = "Table 2. Arterial and arterialized venous blood samples collected at baseline during isocapnic trial. Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design.",
+             col.names = rep(" ",10), justify = c("left", rep("center", 9)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
+
+
+
+#
+```{r echo = FALSE}
+emphasize.strong.rows(1:2)
+pander(table3, 
+             caption = "Table 3. Cardiovascular and hemodynamic responses to hypercapnia. Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design.",
+             col.names = rep(" ",10), justify = c("left", rep("center", 9)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
+
+
+
+#
+```{r echo = FALSE}
+emphasize.strong.rows(1:2)
+pander(table4, 
+             caption = "Table 4. Arterialized venous blood samples at baseline and during hypercapnia.  Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design.",
+             col.names = rep(NULL, 10), justify = c("left", rep("center", 9)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
+
+
+
+#
+```{r echo = FALSE}
+emphasize.strong.rows(1:2)
+pander(table56[[1]], 
+             caption = "Table 5.  Cardiovascular and hemodynamic responses observed in PBO trial, to stepwise hypoxic challenges during normocapnia and hypercapnia. Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design.",
+             col.names = rep(NULL,12), justify = c("left", rep("center", 11)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
+
+
+
+#
+```{r echo = FALSE}
+emphasize.strong.rows(1:2)
+pander(table56[[2]], 
+             caption = "Table 6.  Arterialized venous blood samples collected in PBO trial, during stepwise hypoxic chanllenges with normocapnia and hypercapnia. Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design.",
+             col.names = rep(NULL,12), justify = c("left", rep("center", 11)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
+
+
+
+#
+```{r echo = FALSE}
+emphasize.strong.rows(1:2)
+pander(table78[[1]], 
+             caption = "Table 7.  Cardiovascular and hemodynamic responses observed in MZ trial, to stepwise hypoxic challenges during normocapnia and hypercapnia. Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design.",
+             col.names = rep(NULL,12), justify = c("left", rep("center", 11)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
+
+
+
+#
+```{r echo = FALSE}
+emphasize.strong.rows(1:2)
+pander(table78[[2]], 
+             caption = "Table 8.  Arterialized venous blood samples collected in MZ trial, during stepwise hypoxic chanllenges with normocapnia and hypercapnia. Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design.",
+             col.names = rep(NULL,12), justify = c("left", rep("center", 11)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
+
+
+#
+```{r echo = FALSE}
+emphasize.strong.rows(1:2)
+pander(table910[[1]], 
+             caption = "Table 9.  Cardiovascular and hemodynamic responses observed in AZ trial, to stepwise hypoxic challenges during normocapnia and hypercapnia. Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design.",
+             col.names = rep(NULL,12), justify = c("left", rep("center", 11)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
+
+
+
+#
+```{r echo = FALSE}
+emphasize.strong.rows(1:2)
+pander(table910[[2]], 
+             caption = "Table 10.  Arterialized venous blood samples collected in AZ trial, during stepwise hypoxic chanllenges with normocapnia and hypercapnia. Values represent Mean +/- SEM. Parameters compared using mixed effects model with repeated measures design.",
+             col.names = rep(NULL,14), justify = c("left", rep("center", 11)), style = "rmarkdown",
+             split.table = Inf, split.cell = 30)
+```
